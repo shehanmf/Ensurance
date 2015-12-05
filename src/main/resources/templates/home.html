@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title></title>
+</head>
+<body>
+Home page , hello
+<p><a href="/quotationrequest"> Place a Quotation Request</a></p>
+<p><a href="/myrequests"> View My Requests</a></p>
+<p><a href="/writereview"> Write a Review for an Insurance Service Provider</a></p>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+</body>
+</html>
