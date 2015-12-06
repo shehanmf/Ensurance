@@ -27,8 +27,6 @@ import devday.ensuarance.repository.UserRepository;
 @Produces(MediaType.APPLICATION_JSON)
 public class QuotationRequesteService{
 	
-
-	
 	@Autowired
 	private QuotationRequestRepository quotationRequestRepository;
 	
