@@ -3,6 +3,7 @@ package devday.ensuarance.entity;
 import java.util.Date;
 import java.util.List;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -40,7 +41,7 @@ public class Review {
 	@JoinColumn(name = "commentor_id", nullable = false)
 	private User commentor;
 
-	@OneToMany(fetch = FetchType.EAGER)
+	@OneToMany(fetch = FetchType.EAGER, cascade = CascadeType.ALL)
 	private List<Rating> ratings;
 
 	@Column

@@ -5,9 +5,11 @@ import java.util.Map;
 public class RatingSummary {
 	private Long companyId;
 
-	private Double tatalRating;
+	private Double totalRating;
 
 	private Map<Long, Double> factorWiseRatings;
+	
+	private Long totalNoOfReviews;
 
 	public Long getCompanyId() {
 		return companyId;
@@ -18,11 +20,11 @@ public class RatingSummary {
 	}
 
 	public Double getTatalRating() {
-		return tatalRating;
+		return totalRating;
 	}
 
-	public void setTatalRating(Double tatalRating) {
-		this.tatalRating = tatalRating;
+	public void setTotalRating(Double tatalRating) {
+		this.totalRating = tatalRating;
 	}
 
 	public Map<Long, Double> getFactorWiseRatings() {
@@ -31,5 +33,13 @@ public class RatingSummary {
 
 	public void setFactorWiseRatings(Map<Long, Double> factorWiseRatings) {
 		this.factorWiseRatings = factorWiseRatings;
+	}
+
+	public Long getTotalNoOfReviews() {
+		return totalNoOfReviews;
+	}
+
+	public void setTotalNoOfReviews(Long totalNoOfReviews) {
+		this.totalNoOfReviews = totalNoOfReviews;
 	}
 }
