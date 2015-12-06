@@ -16,12 +16,13 @@ angular.module('commentlist', [])
     }];
   }])
   .directive('commentList', function() {
-    return {
-      template: '<table>'+
+    
+	return {
+      template: '<table class="table">'+
       '<tr ng-repeat="comment in comments">'+
       '<td>{{comment.user.username}}'+
         '</td>'+
-        '<td><table>'+
+        '<td><table class="table">'+
         '<tr>'+
         '<td><b>{{comment.title}}</b></td></tr>'+
         '<tr><td>{{comment.createdDate}}</td></tr>'+
@@ -31,4 +32,6 @@ angular.module('commentlist', [])
       '</tr>'+
       '</table>'
     };
+	
+	
   });
