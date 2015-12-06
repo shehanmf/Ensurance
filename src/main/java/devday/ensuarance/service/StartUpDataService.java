@@ -93,7 +93,7 @@ public class StartUpDataService {
                     quot.setDescription("desc");
                     quot.setOwner(user);
                     quot.setRequest(req2);
-                    qRepo.save(quot);
+//                    qRepo.save(quot);
 
     }
     

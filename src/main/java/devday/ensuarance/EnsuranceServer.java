@@ -39,7 +39,7 @@ public class EnsuranceServer extends WebMvcConfigurerAdapter {
 
     public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(EnsuranceServer.class, args);
-        context.getBean(StartUpDataService.class).initiateStartUpData();
+//        context.getBean(StartUpDataService.class).initiateStartUpData();
     }
 
 
