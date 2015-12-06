@@ -1,0 +1,41 @@
+<div>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+
+<style>
+        .rating{
+  color: #a9a9a9;
+  margin: 0;
+  padding: 0;
+}
+
+ul.rating {
+  display: inline-block;
+}
+
+.rating li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 1px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.rating .filled {
+  color: #21568b;
+}
+        </style>
+    
+<!--script src="myApp.js"></script-->
+<script src="ratings.js"></script>
+
+<div ng-app="RatingTutorial" ng-controller="RatingCtrl">
+  
+    <h3>Rating</h3>
+ <div ng-init="rating = star.rating + 1"></div>
+
+<div class="star-rating" star-rating rating-value="rating"
+
+ data-max="10" on-rating-selected="rateFunction(rating)"></div>
+</div>
+</div>
