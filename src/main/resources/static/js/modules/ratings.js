@@ -2,7 +2,7 @@ angular.module('RatingTutorial', [])
   .controller('RatingCtrl', function($scope) {
     $scope.rating = 5;
     $scope.rateFunction = function(rating) {
-      alert('Rating selected - ' + rating);
+      
     };
   })
   .directive('starRating',
