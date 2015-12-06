@@ -1,4 +1,4 @@
-<body>
+<div>
 <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
 
 <style>
@@ -25,12 +25,11 @@ ul.rating {
   color: #21568b;
 }
         </style>
-    </head>
     
 <!--script src="myApp.js"></script-->
 <script src="ratings.js"></script>
 
-<body ng-app="RatingTutorial" ng-controller="RatingCtrl">
+<div ng-app="RatingTutorial" ng-controller="RatingCtrl">
   
     <h3>Rating</h3>
  <div ng-init="rating = star.rating + 1"></div>
@@ -38,4 +37,5 @@ ul.rating {
 <div class="star-rating" star-rating rating-value="rating"
 
  data-max="10" on-rating-selected="rateFunction(rating)"></div>
-</body>
+</div>
+</div>
