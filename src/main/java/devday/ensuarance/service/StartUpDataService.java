@@ -1,24 +1,19 @@
 package devday.ensuarance.service;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import devday.ensuarance.entity.Company;
 import devday.ensuarance.entity.InsuaranceType;
 import devday.ensuarance.entity.Quotation;
 import devday.ensuarance.entity.QuotationRequest;
-import devday.ensuarance.entity.RatingFactor;
 import devday.ensuarance.entity.User;
 import devday.ensuarance.entity.VehicleCategory;
-import devday.ensuarance.repository.CompanyRepository;
 import devday.ensuarance.repository.InsuaranceTypeRespository;
 import devday.ensuarance.repository.QuotationRepository;
 import devday.ensuarance.repository.QuotationRequestRepository;
-import devday.ensuarance.repository.RatingFactorRepository;
 import devday.ensuarance.repository.UserRepository;
 import devday.ensuarance.repository.VehicleCategoryRepository;
 
@@ -42,12 +37,6 @@ public class StartUpDataService {
     
     @Autowired
     private QuotationRepository qRepo;
-    
-    @Autowired
-    private CompanyRepository companyRepo;
-    
-    @Autowired
-    private RatingFactorRepository ratingFacRepo;
 
     public void initiateStartUpData()
     {
@@ -57,20 +46,18 @@ public class StartUpDataService {
             user = User.createUser("Shehan","shehan_mf@yahoo.com","Logos321");
             user = userRepository.save(user);
         }  
-        System.out.println(user.getUsername() +"   " +  user.getEmail());
-        User userPr = userRepository.findByUsername("Priyal");
-        if(userPr == null)
+        
+        user = userRepository.findByUsername("Priyal");
+        if(user == null)
         {
-            userPr = User.createUser("Priyal","priyal85@gmail.com","abc123");
-            userPr = userRepository.save(userPr);
+            user = User.createUser("Priyal","priyal85@gmail.com","abc123");
+            user = userRepository.save(user);
         }  
 //
-        System.out.println(userPr.getUsername() +"   " +  userPr.getEmail());
+        System.out.println(user.getUsername() +"   " +  user.getEmail());
         
         createVehiclecategories();
         createInsuaranceTypes();
-        createInsuranceCompanies();
-        createRatingFactores();
         
         //dummy
         QuotationRequest req1=new QuotationRequest();
@@ -81,7 +68,7 @@ public class StartUpDataService {
         VehicleCategory cat = new VehicleCategory();
         cat.setId(1);
         req1.setVehicleCategory(cat);
-        req1.setRequestor(userPr);
+        req1.setRequestor(user);
         req1.setValue(100);
         req1.setYear(2000);
         
@@ -106,49 +93,11 @@ public class StartUpDataService {
                     quot.setDescription("desc");
                     quot.setOwner(user);
                     quot.setRequest(req2);
-                    qRepo.save(quot);
+//                    qRepo.save(quot);
 
     }
     
-    private void createRatingFactores() {
-		List<RatingFactor> factors = new ArrayList<RatingFactor>();
-		RatingFactor factor1 = new RatingFactor();
-		factor1.setDescription("How quickly the agent arrived?");
-		factors.add(factor1);
-		RatingFactor factor2 = new RatingFactor();
-		factor2.setDescription("Anual Premium Amount");
-		factors.add(factor2);
-		RatingFactor factor3 = new RatingFactor();
-		factor3.setDescription("How soon the claim was processed?");
-		factors.add(factor3);
-		RatingFactor factor4 = new RatingFactor();
-		factor4.setDescription("How helpful was the customer care centre/hotline");
-		factors.add(factor4);
-		RatingFactor factor5 = new RatingFactor();
-		factor5.setDescription("Overall satisfaction about the company's service");
-		factors.add(factor5);
-		ratingFacRepo.save(factors);
-		
-	}
-
-	private void createInsuranceCompanies() {
-    	
-    	List<Company> companies = new ArrayList<Company>();
-    	Company company1 = new Company();
-    	company1.setName("Janashakthi");
-    	companies.add(company1);
-    	Company company2 = new Company();
-    	company2.setName("Sri Lanka Insurance");
-    	companies.add(company2);
-    	Company company3 = new Company();
-    	company3.setName("Ceylinco");
-    	companies.add(company3);
-		companyRepo.save(companies);
-	}
-	
-	
-
-	public void createVehiclecategories()
+    public void createVehiclecategories()
     {
     	System.out.println("Start creating vehical categories");
     	

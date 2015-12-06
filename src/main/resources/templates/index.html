@@ -1,11 +1,336 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
-<head lang="en">
-    <meta charset="UTF-8" />
-    <title>HELLO</title>
+<!--
+Template Name: The Modernist
+Author: <a href="http://www.os-templates.com/">OS Templates</a>
+Author URI: http://www.os-templates.com/
+Licence: Free to use under our free template licence terms
+Licence URI: http://www.os-templates.com/template-terms
+-->
+<html>
+<head>
+    <title>eNsurance.lk</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="css/styles/layout.css" type="text/css"/>
+    <link rel="stylesheet" href="css/styles/rating.css" type="text/css"/>
 </head>
-<body>
-Please Log in to continue..!!!
-<p><a href="/login"> Login</a></p>
+<body id="top">
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row1">
+    <!-- ################################################################################################ -->
+    <header id="header" class="clear">
+        <!-- ################################################################################################ -->
+        <div id="logo">
+            <h1><a href="index.html">eNsurance.lk</a></h1>
+            <p>Get your Insurance cheap</p>
+        </div>
+        <nav>
+            <ul class="clear">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a class="drop" href="#">Pages</a>
+                    <ul>
+                        <li><a href="pages/gallery.html">Gallery</a></li>
+                        <li><a href="pages/full-width.html">Full Width</a></li>
+                        <li><a href="pages/sidebar-left.html">Sidebar Left</a></li>
+                        <li><a href="pages/sidebar-right.html">Sidebar Right</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#">Link Text</a></li>
+                <li><a href="#" onclick='overlay()'>Login</a></li>
+            </ul>
+        </nav>
+        <!-- ################################################################################################ -->
+    </header>
+    <!-- ################################################################################################ -->
+
+    <div id="slider" class="jcarousel-wrapper">
+        <div id="slider_content" class="jcarousel">
+            <ul>
+                <li>
+                    <figure><a href="#"><img src="images/slider/1.png" alt=""/></a>
+                        <figcaption>
+                            <h2>Sri Lanka Insurance</h2>
+
+                            <div class="acidjs-rating-stars acidjs-rating-disabled">
+                                <form>
+                                    <input type="radio" checked="checked" name="group-1" id="group-1-0" value="5" /><label for="group-1-0"></label>
+                                    <input type="radio" name="group-1" id="group-1-1" value="4" /><label for="group-1-1"></label>
+                                    <input type="radio" name="group-1" id="group-1-2" value="3" /><label for="group-1-2"></label>
+                                    <input type="radio" name="group-1" id="group-1-3" value="2" /><label for="group-1-3"></label>
+                                    <input type="radio" name="group-1" id="group-1-4"  value="1" /><label for="group-1-4"></label>
+                                </form>
+                            </div>
+
+                            <p>Sri Lanka Insurance is the largest and strongest composite insurance provider in Sri Lanka. It is the first and only insurance company in Sri Lanka to be assigned a prime AA- rating for Insurance Financial Strength from the global rating agency Fitch Ratings London.</p>
+                            <footer><a href="#">Read More Here</a></footer>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><a href="#"><img src="images/slider/2.png" alt=""/></a>
+                        <figcaption>
+                            <h2>Ceylinco Insurance</h2>
+
+                            <div class="acidjs-rating-stars acidjs-rating-disabled">
+                                   				 <form>
+                                        <input type="radio" name="group-2" id="group-2-0" value="5" /><label for="group-2-0"></label>
+                                <input type="radio" name="group-2" id="group-2-1" value="4" /><label for="group-2-1"></label>
+                                <input type="radio" checked="checked" name="group-2" id="group-2-2" value="3" /><label for="group-2-2"></label>
+                                <input type="radio" name="group-2" id="group-2-3" value="2"/><label for="group-2-3"></label>
+                                <input type="radio" name="group-2" id="group-2-4" value="1"/><label for="group-2-4"></label>
+                                     </form>
+                            </div>
+
+                            <p>" Big or Small Ceylinco Protects Them All ", Ceylinco Insurance is leading insurance company in Sri Lanka, with the largest network of branches and agents in the insurance industry.</p>
+                            <footer><a href="#">Read More Here </a></footer>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><a href="#"><img src="images/slider/3.png" alt=""/></a>
+                        <figcaption>
+                            <h2>Asian Alliance Insurance</h2>
+
+                            <div class="acidjs-rating-stars acidjs-rating-disabled">
+                                   				 <form>
+                                        <input type="radio" name="group-2" id="group-2-0" value="5" /><label for="group-2-0"></label>
+                                <input type="radio" checked="checked" name="group-2" id="group-2-1" value="4" /><label for="group-2-1"></label>
+                                <input type="radio" name="group-2" id="group-2-2" value="3" /><label for="group-2-2"></label>
+                                <input type="radio" name="group-2" id="group-2-3" value="2" /><label for="group-2-3"></label>
+                                <input type="radio" name="group-2" id="group-2-4" value="1"/><label for="group-2-4"></label>
+                                     </form>
+                            </div>
+
+                            <p>Asian Alliance Insurance PLC commenced operations in December 1999 and has evolved into a reputed composite insurance solutions provider at the forefront of the industry.</p>
+                            <footer><a href="#">Read More Here </a></footer>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><a href="#"><img src="images/slider/4.png" alt=""/></a>
+                        <figcaption>
+                            <h2>HNB Motorguard</h2>
+
+                            <div class="acidjs-rating-stars acidjs-rating-disabled">
+                                   				 <form>
+                                        <input type="radio" name="group-2" id="group-2-0" value="5" /><label for="group-2-0"></label>
+                                <input type="radio" name="group-2" id="group-2-1" value="4" /><label for="group-2-1"></label>
+                                <input type="radio" name="group-2" id="group-2-2" value="3" /><label for="group-2-2"></label>
+                                <input type="radio" checked="checked" name="group-2" id="group-2-3" value="2" /><label for="group-2-3"></label>
+                                <input type="radio" name="group-2" id="group-2-4" value="1"/><label for="group-2-4"></label>
+                                     </form>
+                            </div>
+
+                            <p>HNB Assurance PLC is a leading Sri Lankan Insurance corporation which provides Life Insurance solutions for Sri Lankan citizens. Backed by Hatton National Bank (HNB), we are a strong, secure/stable organization which has a Fitch Financial rating of A (lka).</p>
+                            <footer><a href="#">Read More Here </a></footer>
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure><a href="#"><img src="images/slider/5.png" alt=""/></a>
+                        <figcaption>
+                            <h2>Janashakthi Insurance</h2>
+
+                            <div class="acidjs-rating-stars acidjs-rating-disabled">
+                                   				 <form>
+                                        <input type="radio" name="group-2" id="group-2-0" value="5" /><label for="group-2-0"></label>
+                                <input type="radio" name="group-2" id="group-2-1" value="4" /><label for="group-2-1"></label>
+                                <input type="radio" checked="checked" name="group-2" id="group-2-2" value="3" /><label for="group-2-2"></label>
+                                <input type="radio" name="group-2" id="group-2-3" value="2" /><label for="group-2-3"></label>
+                                <input type="radio" name="group-2" id="group-2-4" value="1" /><label for="group-2-4"></label>
+                                     </form>
+                            </div>
+
+                            <p>Invest in the country’s most comprehensive motor insurance policies and let us take care of you while on the road. Janashakthi Full Option provides extensive benefits to the owner of the vehicle, occupants and even pedestrians while going beyond the norm to give you extra benefits at no extra cost.</p>
+                            <footer><a href="#">Read More Here</a></footer>
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <!-- Previous Next -->
+        <a href="#" id="featured-item-prev" class="jcarousel-control-prev"> Previous</a> <a href="#" id="featured-item-next" class="jcarousel-control-next">Next </a>
+        <!-- / Previous Next -->
+    </div>
+    <!-- ########################################################################################## -->
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row2">
+    <main id="container" class="clear">
+        <!-- container body -->
+        <!-- ########################################################################################## -->
+        <div id="homepage">
+            <!-- Services -->
+            <div id="services">
+                <ul class="clear">
+                    <li>
+                        <article> <a class="service s-1" href="#">
+                            <h2>Get my quote</h2>
+                            <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+                        </a> </article>
+                    </li>
+                    <li>
+                        <article> <a class="service s-2" href="/requestlist">
+                            <h2>Compare me</h2>
+                            <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+                        </a> </article>
+                    </li>
+                    <li>
+                        <article> <a class="service s-3" href="#">
+                            <h2>My quotes</h2>
+                            <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+                        </a> </article>
+                    </li>
+                    <li>
+                        <article> <a class="service s-4" href="#">
+                            <h2>Find my car</h2>
+                            <p>Vestassapede et donec ut est libe ros sus et eget sed eget quisq ueta habitur augue</p>
+                        </a> </article>
+                    </li>
+                </ul>
+            </div>
+            <!-- / Services -->
+            <!-- Latest Work -->
+            <div id="showcase">
+                <h2><span>Recent Quotes</span></h2>
+                <ul class="clear">
+                    <li>
+                        <figure><a href="#">
+                            <img src="images/gallery/thumbs/bmw_x5.jpg" alt=""/>
+                            <strong>
+                                <p>BMW X5<br />
+                                    2015<br />
+                                    Valuation :- Rs 160000000 <br />
+                                    Minimum quotation :- Rs 120000 <br />
+                                    Full Option</p>
+                            </strong>
+                        </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure><a href="#">
+                            <img src="images/gallery/thumbs/kia-picanto.jpg" alt=""/>
+                            <strong>
+                                <p>Kia Picanto<br />
+                                    2012<br />
+                                    Valuation :- Rs 2000000 <br />
+                                    Minimum quotation :- Rs 50000 <br />
+                                    Full Option</p>
+                            </strong>
+                        </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure><a href="#">
+                            <img src="images/gallery/thumbs/evoque.jpg" alt=""/>
+                            <strong>
+                                <p>Range Rover Evoque<br />
+                                    2016<br />
+                                    Valuation :- Rs 11000000 <br />
+                                    Minimum quotation :- Rs 90000 <br />
+                                    Full Option</p>
+                            </strong>
+                        </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure><a href="#">
+                            <img src="images/gallery/thumbs/merc s.jpg" alt=""/>
+                            <strong>
+                                <p>Mercedes-Benz S-class<br />
+                                    2015<br />
+                                    Valuation :- Rs 36000000 <br />
+                                    Minimum quotation :- Rs 400000 <br />
+                                    Full Option</p>
+                            </strong>
+                        </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure><a href="#">
+                            <img src="images/gallery/thumbs/Tesla-Model-S.jpg" alt=""/>
+                            <strong>
+                                <p>Tesla model s<br />
+                                    2014<br />
+                                    Valuation :- Rs 12000000 <br />
+                                    Minimum quotation :- Rs 100000 <br />
+                                    Full Option</p>
+                            </strong>
+                        </a>
+                        </figure>
+                    </li>
+                    <li>
+                        <figure><a href="#">
+                            <img src="images/gallery/thumbs/camaro.jpg" alt=""/>
+                            <strong>
+                                <p>Chevrolet Camaro<br />
+                                    2015<br />
+                                    Valuation :- Rs 22000000 <br />
+                                    Minimum quotation :- Rs 250000 <br />
+                                    Full Option</p>
+                            </strong>
+                        </a>
+                        </figure>
+                    </li>
+                </ul>
+            </div>
+            <!-- / Latest Work -->
+        </div>
+        <!-- ########################################################################################## -->
+        <!-- / container body -->
+        <div class="clear"></div>
+    </main>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<div class="wrapper row3">
+    <footer id="footer" class="clear">
+        <!-- ################################################################################################ -->
+        <div class="one_quarter first">
+            <h2 class="title">From The Blog</h2>
+            <article>
+                <div class="header">
+                    <h2><a href="#">Blog Post Title</a></h2>
+                    <time datetime="2000-04-06">Friday, 6<sup>th</sup> April 2000</time>
+                </div>
+                <p>Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque sed. Facilispede estibulum nulla orna nisl velit elit ac aliquat non tincidunt.</p>
+                <p>Justoid nonummy laoreet phasellent penatoque in antesque pellus elis eget tincidunt. Nequatdui laorem justo a non tellus laoremut vitae doloreet.</p>
+                <p><a href="#">Read More </a></p>
+            </article>
+        </div>
+        <div class="one_quarter">
+            <h2 class="title">Quick Links</h2>
+            <nav>
+                <ul>
+                    <li class="first"><a href="#">Lorem ipsum dolor sit</a></li>
+                    <li><a href="#">Amet consectetur</a></li>
+                    <li><a href="#">Praesent vel sem id</a></li>
+                    <li><a href="#">Curabitur hendrerit est</a></li>
+                    <li><a href="#">Aliquam eget erat nec sapien</a></li>
+                    <li><a href="#">Cras id augue nunc</a></li>
+                    <li><a href="#">In nec justo non</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- ################################################################################################ -->
+    </footer>
+</div>
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+<!-- ################################################################################################ -->
+
+<!-- JAVASCRIPTS -->
+<script src="css/scripts/jquery.min.js"></script>
+<!--<script src="css/scripts/jquery.grayscale.js"></script>-->
+<script src="css/scripts/carousel/jquery.jcarousel.pack.js"></script>
+<script src="css/scripts/carousel/jquery.jcarousel.setup.js"></script>
+<script src="css/scripts/logindialog.js"></script>
+
 </body>
 </html>

@@ -1,11 +1,8 @@
 package devday.ensuarance;
 
-import java.sql.SQLException;
-
 import org.apache.tomcat.jdbc.pool.DataSource;
 import org.glassfish.jersey.servlet.ServletContainer;
 import org.glassfish.jersey.servlet.ServletProperties;
-import org.h2.tools.Server;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
@@ -40,17 +37,9 @@ public class EnsuranceServer extends WebMvcConfigurerAdapter {
     private String databasePassword;
 
 
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         ConfigurableApplicationContext context = SpringApplication.run(EnsuranceServer.class, args);
-        try {
-			Server webServer = Server.createWebServer("-webPort", "8085", "-tcpAllowOthers").start();
-			Server server = Server.createTcpServer("-tcpPort" ,"9095", "-tcpAllowOthers").start();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-
-        context.getBean(StartUpDataService.class).initiateStartUpData();
+//        context.getBean(StartUpDataService.class).initiateStartUpData();
     }
 
 
@@ -59,6 +48,7 @@ public class EnsuranceServer extends WebMvcConfigurerAdapter {
         registry.addViewController("/login").setViewName("login");
         registry.addViewController("/quotationrequest").setViewName("quotationrequest");
         registry.addViewController("/myrequests").setViewName("myrequests");
+        registry.addViewController("/requestlist").setViewName("requestlist");
     }
 
     @Bean
