@@ -31,16 +31,16 @@ public class ClientComSecurityConf extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/").permitAll()
-                .anyRequest().fullyAuthenticated().and().formLogin()
-                .loginPage("/login").successHandler(new SimpleUrlAuthenticationSuccessHandler("/home") ).failureUrl("/login?error").permitAll().and()
-                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/").permitAll()
-
-        .and()
-                .sessionManagement()
-                .maximumSessions(1)
-                .maxSessionsPreventsLogin(true)
-                .expiredUrl("/login?expired");
+//        http.authorizeRequests().antMatchers("/").permitAll()
+//                .anyRequest().fullyAuthenticated().and().formLogin()
+//                .loginPage("/login").successHandler(new SimpleUrlAuthenticationSuccessHandler("/home") ).failureUrl("/login?error").permitAll().and()
+//                .logout().logoutRequestMatcher(new AntPathRequestMatcher("/logout")).logoutSuccessUrl("/").permitAll()
+//
+//        .and()
+//                .sessionManagement()
+//                .maximumSessions(1)
+//                .maxSessionsPreventsLogin(true)
+//                .expiredUrl("/login?expired");
         http.csrf().disable();
     }
 
