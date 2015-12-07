@@ -50,6 +50,7 @@ public class EnsuranceServer extends WebMvcConfigurerAdapter {
         registry.addViewController("/myrequests").setViewName("myrequests");
         registry.addViewController("/requestlist").setViewName("requestlist");
         registry.addViewController("/pricelist").setViewName("pricelist");
+        registry.addViewController("/showQuotations").setViewName("showQuotations");
     }
 
     @Bean
