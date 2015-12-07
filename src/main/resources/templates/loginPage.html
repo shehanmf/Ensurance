@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>login</title>
+  <link rel="stylesheet" href="css/styles/logindialog.css" type="text/css"/>
+   <link rel="stylesheet" href="css/styles/layout.css" type="text/css"/>
+</head>
+<body id="top">
+
+	<script src="layout/scripts/jquery.min.js"></script>
+	<script src="layout/scripts/logindialog.js"></script>
+	<div class="loginpanel">
+		<form th:action="@{/submitLogin}" method="post">
+			<div class="txt">
+				<input id="user" type="text" name="username" /> <label for="user"
+					class="entypo-user"></label>
+			</div>
+			<div class="txt">
+				<input id="pwd" type="password" name="password" /> <label for="pwd"
+					class="entypo-lock"></label>
+			</div>
+			<div class="buttons">
+				<input type="submit" value="Login" class="btn btn-default"/> <span> 
+				<a href="/" class="entypo-home"> Home</a>
+				</span>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

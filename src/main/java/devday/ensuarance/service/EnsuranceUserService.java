@@ -29,7 +29,7 @@ public class EnsuranceUserService implements UserDetailsService {
 
     @Autowired
     private UserRepository userRepository;
-
+    
     @Transactional(readOnly=true)
     @Override
     public UserDetails loadUserByUsername(final String username)
