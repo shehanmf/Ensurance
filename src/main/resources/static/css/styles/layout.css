@@ -158,6 +158,19 @@ table tbody tr.light{}
 table tbody tr.dark{}
 
 
+#showcase2{display:block; width:100%;}
+#showcase2 h2{display:block; position:relative; width:100%; margin-bottom:45px; text-align:center; text-transform:uppercase; font-size:32px;}
+#showcase2 h2::before{display:inline-block; position:absolute; top:50%; left:0; width:100%; content:""; z-index:-1;}
+#showcase2 h2 span{padding:5px 15px;}
+
+#showcase2 ul{margin:0; padding:0; list-style-type:none;}
+#showcase2 ul li{display:block; position:relative; float:left; width:300px; margin:0 0 30px 30px;}
+#showcase2 ul li:first-child, #showcase ul li.first{margin-left:0;}
+#showcase2 ul li figure{}
+#showcase2 ul li a{display:block; font-size:14px;}
+#showcase2 ul li a strong{display:block; position:absolute; bottom:5px; left:5px; width:270px; height:180px; margin:0; padding:5px 10px; text-align:left; font-weight:normal; }
+#showcase2 ul li a:hover strong{display:none;}
+
 /* Gallery
 ---------------------------------------------------------------------------------------------------------------*/
 #showcase{display:block; width:100%;}
@@ -201,10 +214,13 @@ table tbody tr.dark{}
 
 /* Group CSS3 Attributes
 ---------------------------------------------------------------------------------------------------------------*/
-#header nav ul li a, #header nav ul li ul li a, #slider_content footer a, #showcase h2 span, #content, .sidebar, #comments input, #comments textarea, #comments button, #footer input, #footer textarea, #footer button{border-radius:10px;}
+#header nav ul li a, #header nav ul li ul li a, #slider_content footer a, #showcase h2 span,#showcase2 h2 span, #content, .sidebar, #comments input, #comments textarea, #comments button, #footer input, #footer textarea, #footer button{border-radius:10px;}
 
 #showcase ul li:nth-child(3n+1){margin-left:0;}
 #showcase ul li a:hover{-webkit-transition:border-color 400ms ease-in; -moz-transition:border-color 400ms ease-in; -ms-transition:border-color 400ms ease-in; -o-transition:border-color 400ms ease-in; transition:border-color 400ms ease-in;}
+
+#showcase2 ul li:nth-child(3n+1){margin-left:0;}
+#showcase2 ul li a:hover{-webkit-transition:border-color 400ms ease-in; -moz-transition:border-color 400ms ease-in; -ms-transition:border-color 400ms ease-in; -o-transition:border-color 400ms ease-in; transition:border-color 400ms ease-in;}
 
 #services a:hover, #services a:hover h2{-webkit-transition:background-color 400ms ease-in; -moz-transition:background-color 400ms ease-in; -ms-transition:background-color 400ms ease-in; -o-transition:background-color 400ms ease-in; transition:background-color 400ms ease-in;}
 
@@ -280,6 +296,12 @@ table tbody tr.dark{color:#666666; background-color:#E8E8E8;}
 #showcase ul li a{color:#FFFFFF; background-color:transparent; border:5px solid #FFFFFF;}
 #showcase ul li figure a strong{background-color:hsla(0,0%,0%,.5);}
 #showcase ul li a:hover{border-color:hsla(139,39%,61%,.5);}
+
+#showcase2 h2::before{border-top:3px solid #303030;}
+#showcase2 h2 span{color:#FFFFFF; background-color:#303030;}
+#showcase2 ul li a{color:#FFFFFF; background-color:transparent; border:5px solid #FFFFFF;}
+#showcase2 ul li figure a strong{background-color:hsla(0,0%,0%,.5);}
+#showcase2 ul li a:hover{border-color:hsla(139,39%,61%,.5);}
 
 /* Homepage */
 #homepage #services a{border:1px solid #E4E4E4; color:#979797; background-color:#FFFFFF;}
