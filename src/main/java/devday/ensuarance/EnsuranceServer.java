@@ -50,7 +50,14 @@ public class EnsuranceServer extends WebMvcConfigurerAdapter {
         registry.addViewController("/myrequests").setViewName("myrequests");
         registry.addViewController("/requestlist").setViewName("requestlist");
         registry.addViewController("/pricelist").setViewName("pricelist");
-        registry.addViewController("/showQuotations").setViewName("showQuotations");
+        registry.addViewController("/showQuotations1").setViewName("showQuotations1");
+        registry.addViewController("/showQuotations2").setViewName("showQuotations2");
+        registry.addViewController("/asianAllianceInsurance").setViewName("asianAllianceInsurance");
+        registry.addViewController("/ceylincoInsurance").setViewName("ceylincoInsurance");
+        registry.addViewController("/hnbMotorguard").setViewName("hnbMotorguard");
+        registry.addViewController("/janashakthiInsurance").setViewName("janashakthiInsurance");
+        registry.addViewController("/srilankaInsurance").setViewName("srilankaInsurance");
+        registry.addViewController("/agentPage").setViewName("agentPage");
     }
 
     @Bean

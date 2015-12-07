@@ -2,8 +2,8 @@ app.controller("requestlist", function($scope, $http, $location , $window) {
 
     $scope.quotationRequest = [
         {   'reqid':'7',
-            'car':'Honda Civc  2003',
-            'valuation': 2500000,
+            'car':'Chevrolet Camaro  2015',
+            'valuation': 28000000,
             'status': 'Sent',
             'receivedCount' : 0},
         {  'reqid':'8',
@@ -33,12 +33,6 @@ app.controller("requestlist", function($scope, $http, $location , $window) {
         if( index === -1 ) {
             alert( "Something gone wrong" );
         }
-
-        $('html,body').animate({
-                scrollTop: $(".services").offset().top
-            },
-            'slow');
-        
         //$http({
         //    method  : 'POST',
         //    url     : '/pricelist',
@@ -49,7 +43,15 @@ app.controller("requestlist", function($scope, $http, $location , $window) {
         //alert("Selected row :- " + $scope.quotationRequest[index].car.toString())
 
         ////$location.path('../pricelist')
-        //$window.location.href = '/pricelist';
+        if(index == 0)
+        {
+            $window.location.href = '/showQuotations2';
+        }
+        else
+        {
+            $window.location.href = '/showQuotations1';
+        }
+
     };
 
 
