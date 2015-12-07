@@ -83,13 +83,7 @@
 			<scope>${jersey.scope}</scope>
 		</dependency>
 
-        <!--<dependency>-->
-            <!--<groupId>org.glassfish.jersey.core</groupId>-->
-            <!--<artifactId>jersey-server</artifactId>-->
-            <!--<version>${jersey.version}</version>-->
-        <!--</dependency>-->
-
-        <!-- Jersey JSON Jackson (2.x) entity providers support module -->
+		<!-- Jersey JSON Jackson (2.x) entity providers support module -->
 		<dependency>
 			<groupId>org.glassfish.jersey.media</groupId>
 			<artifactId>jersey-media-json-jackson</artifactId>

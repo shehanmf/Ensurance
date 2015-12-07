@@ -14,9 +14,13 @@ import javax.ws.rs.core.MediaType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
+import devday.ensuarance.entity.Company;
 import devday.ensuarance.entity.InsuaranceType;
+import devday.ensuarance.entity.RatingFactor;
 import devday.ensuarance.entity.VehicleCategory;
+import devday.ensuarance.repository.CompanyRepository;
 import devday.ensuarance.repository.InsuaranceTypeRespository;
+import devday.ensuarance.repository.RatingFactorRepository;
 import devday.ensuarance.repository.VehicleCategoryRepository;
 
 /**
@@ -34,6 +38,11 @@ public class MasterDataServices {
 	
 	@Autowired
     private InsuaranceTypeRespository insuaranceTypeRespository;
+	
+	@Autowired
+	private RatingFactorRepository factorRepo;
+	@Autowired
+	private CompanyRepository companyRepo;
 
 	@GET
 	@Path("/listvehiclecategories")
@@ -47,6 +56,18 @@ public class MasterDataServices {
 	public List<InsuaranceType> getInsuranceTypes()
 	{
 		return insuaranceTypeRespository.findAll();
+	}
+
+	@GET
+	@Path("/listratingfactors")
+	public List<RatingFactor> getAllRatingFactors() {
+		return factorRepo.findAll();
+	}
+
+	@GET
+	@Path("/listcompanies")
+	public List<Company> getAllCompanies() {
+		return companyRepo.findAll();
 	}
 	
 }
